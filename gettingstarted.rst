@@ -27,7 +27,7 @@ out Landscape for 14 days using `a free trial <https://landscape.io/start>`_.
 
 If your organisation already has a subscription and you want to be able to see those repositories, you will
 need to grant Landscape permission to view your private repositories on GitHub - you can do that on
-`your preferences page <https://landscape.io/preferences/github-access>`_.
+`your preferences page <https://landscape.io/preferences/github>`_.
 
 You can read more :doc:`about private repositories here <private-repositories>`.
 

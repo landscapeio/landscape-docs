@@ -53,6 +53,13 @@ To do this, you will need a :doc:`.landscape.yaml configuration file <configurat
     uses:
         - django
 
+If Using Flask
+--------------
+
+Similarly, Landscape has Flask-specific behaviours thanks to the awesome
+`pylint-flask plugin<https://github.com/jschaf/pylint-flask>`_.
+
+
 What Next?
 ----------
 

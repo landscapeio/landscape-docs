@@ -32,4 +32,4 @@ Viewing repositories of your company
 If your company has a Landscape subscription and you want to be able to see the results, you will
 need to grant Landscape permissions to view your list of private repositories on GitHub, so that
 it knows which ones you can view. You can do this from
-`your preferences page <https://landscape.io/preferences/github-access>`_.
+`your preferences page <https://landscape.io/preferences/github>`_.

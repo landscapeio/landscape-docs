@@ -26,6 +26,7 @@ Here is a simple example of what a configuration file might look like::
     uses:
         - django
         - celery
+        - flask
     autodetect: yes
     requirements:
         - deps/core.txt
@@ -36,6 +37,9 @@ Here is a simple example of what a configuration file might look like::
     ignore-patterns:
         - ^example/doc_.*\.py$
         - (^|/)docs(/|$)
+    python-targets:
+        - 2
+        - 3
 
 
 
@@ -49,6 +53,18 @@ Basic Options
 does the code analysis, can be configured to be more or less strict. The default setting
 used by Landscape is 'medium' but you can adjust this up or down if you want harsher
 or more relaxed checking.
+
+``python targets <2, 3>``
+This is a list of which major python versions your project supports.
+
+If you specify both 2 and 3, then Landscape will run primarily in Python 3 mode.
+
+If this is not specified, Landscape looks for a ``setup.py`` file in the root
+of the repository, and if found, searches for
+`trove classifiers <http://python-packaging-user-guide.readthedocs.org/en/latest/distributing/#classifiers>`_
+indicating which versions of Python the package supports.
+
+If neither ``python-targets`` nor a ``setup.py`` is found, then Python2 is assumed.
 
 ``pep8``
 --------
@@ -119,7 +135,7 @@ and ``requirements.txt`` files, so if you have a standard way of declaring depen
 you should not need to add any additional information. The ``uses`` setting is to tell
 Landscape explicitly what plugins to load if autodetection does not work.
 
-The currently supported frameworks are ``celery`` and ``django``.
+The currently supported frameworks are ``celery``, ``django`` and ``flask``.
 
 
 ``autodetect: <bool>``

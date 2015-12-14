@@ -12,7 +12,7 @@ generally tries to make static analysis of Python code easier by prioritising im
 The Landscape configuration file is actually almost identical to a Prospector "profile". These profiles give you
 very fine-grained control over what tools run and what errors they omit, and are designed to be composable so you
 can have a company-wide default and project-specific overrides. The
-`prospector documentation site <prospector.readthedocs.org>` has more information.
+`prospector documentation site <https://prospector.landscape.io>` has more information.
 
 
 Is Prospector open source?

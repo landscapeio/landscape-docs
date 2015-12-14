@@ -54,16 +54,27 @@ Troubleshooting
 ---------------
 
 Does Landscape work with Python3?
-    Unfortunately not yet. This is a heavily requested feature however and so development
-    is underway!
+    Yes, see :doc:`this section of the configuration documentation <configuration>`.
+
+Why do I get "Syntax Errors" for my Python 3 project?
+    By default Landscape assumes Python 2. You must either specify ``python-targets``
+    in your configuration file, or have a ``setup.py`` file with appropriate
+    `trove classifiers <http://python-packaging-user-guide.readthedocs.org/en/latest/distributing/#classifiers>`_.
+    Read more on :doc:`the configuration documentation <configuration>`.
 
 My repository doesn't show up!
     If your repository is not in the list on the 'add a repository' page, this could be for
     two reasons. First, if you only recently added it to GitHub, Landscape may not have
-    synced your account yet. You can do that on the right-hand-side of your dashboard. The
-    other possibility is that GitHub has classified the language of your repository as something
+    synced your account yet. You can `force a resync here <https://landscape.io/preferences/github>`_.
+    The other possibility is that GitHub has classified the language of your repository as something
     other than Python. You can show these additional repositories using the filter on the
     left side of the 'add repository' page and select "Language: Everything".
+
+Landscape doesn't show all of my organisations!
+    Not all GitHub organisations allow Landscape access by default, and this is
+    the default for new organisations. You or an admin of the organsation will
+    first need to `enable Landscape on GitHub <https://github.com/settings/connections/applications/82ca3a47d218a80f3962>`_
+    and afterwards, `get Landscape to resync your account <https://landscape.io/preferences/github>`_.
 
 
 Prospector
