@@ -142,7 +142,7 @@ The currently supported frameworks are ``celery``, ``django`` and ``flask``.
 ----------------------
 
 The default behaviour is to autodetect dependencies in order to augment the code analysis. This
-setting can be used to turn off autodetection completely. The default value is ``true``.
+setting can be used to turn off autodetection completely. The default value is ``true``, unless ``requirements`` has been defined.
 The value can be 'true' or 'false'.
 
 
