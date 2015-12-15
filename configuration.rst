@@ -55,6 +55,7 @@ used by Landscape is 'medium' but you can adjust this up or down if you want har
 or more relaxed checking.
 
 ``python targets <2, 3>``
+-------------------------
 This is a list of which major python versions your project supports.
 
 If you specify both 2 and 3, then Landscape will run primarily in Python 3 mode.
