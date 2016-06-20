@@ -25,6 +25,16 @@ The most common desire is to turn off messages for the entire project::
         - E712
 
 
+Advanced pylint configuration
+-----------------------------
+
+You can override some of the pylint configuration and set specific options::
+
+    pylint:
+      options:
+        docstring-min-length: 10
+
+
 Adding or Removing Tools
 ------------------------
 
