@@ -24,22 +24,22 @@ Here is a simple example of what a configuration file might look like::
     strictness: veryhigh
     max-line-length: 120
     uses:
-        - django
-        - celery
-        - flask
+      - django
+      - celery
+      - flask
     autodetect: true
     requirements:
-        - deps/core.txt
-        - deps/test.txt
+      - deps/core.txt
+      - deps/test.txt
     ignore-paths:
-        - docs
-        - mypackage/vendor
+      - docs
+      - mypackage/vendor
     ignore-patterns:
-        - ^example/doc_.*\.py$
-        - (^|/)docs(/|$)
+      - ^example/doc_.*\.py$
+      - (^|/)docs(/|$)
     python-targets:
-        - 2
-        - 3
+      - 2
+      - 3
 
 
 
@@ -75,12 +75,12 @@ strictness settings. To enable full PEP8, you can add a ``pep8`` section to the 
 file like so::
 
     pep8:
-        full: true
+      full: true
 
 To completely ignore all pep8 warnings::
 
     pep8:
-        none: true
+      none: true
 
 
 
