@@ -89,7 +89,8 @@ To completely ignore all pep8 warnings::
 
 This setting controls whether or not Landscape should include warnings about missing
 documentation and the format of documentation strings. This is false by default. If
-enabled, `PEP257 <https://www.python.org/dev/peps/pep-0257/>`_ will be enforced.
+enabled, `PEP257 <https://www.python.org/dev/peps/pep-0257/>`_ will be enforced. The
+value can be ``true`` or ``false``.
 
 
 ``test-warnings <bool>``
