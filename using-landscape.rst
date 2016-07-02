@@ -51,7 +51,7 @@ you will have to manually tell Landscape to use Django plugins.
 To do this, you will need a :doc:`.landscape.yaml configuration file <configuration>`, and include the following::
 
     uses:
-        - django
+      - django
 
 If Using Flask
 --------------

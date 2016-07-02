@@ -19,27 +19,27 @@ An Example File
 Here is a simple example of what a configuration file might look like::
 
 
-    doc-warnings: yes
-    test-warnings: no
+    doc-warnings: true
+    test-warnings: false
     strictness: veryhigh
     max-line-length: 120
     uses:
-        - django
-        - celery
-        - flask
-    autodetect: yes
+      - django
+      - celery
+      - flask
+    autodetect: true
     requirements:
-        - deps/core.txt
-        - deps/test.txt
+      - deps/core.txt
+      - deps/test.txt
     ignore-paths:
-        - docs
-        - mypackage/vendor
+      - docs
+      - mypackage/vendor
     ignore-patterns:
-        - ^example/doc_.*\.py$
-        - (^|/)docs(/|$)
+      - ^example/doc_.*\.py$
+      - (^|/)docs(/|$)
     python-targets:
-        - 2
-        - 3
+      - 2
+      - 3
 
 
 
@@ -75,12 +75,12 @@ strictness settings. To enable full PEP8, you can add a ``pep8`` section to the 
 file like so::
 
     pep8:
-        full: true
+      full: true
 
 To completely ignore all pep8 warnings::
 
     pep8:
-        none: true
+      none: true
 
 
 
@@ -89,7 +89,8 @@ To completely ignore all pep8 warnings::
 
 This setting controls whether or not Landscape should include warnings about missing
 documentation and the format of documentation strings. This is false by default. If
-enabled, `PEP257 <https://www.python.org/dev/peps/pep-0257/>`_ will be enforced.
+enabled, `PEP257 <https://www.python.org/dev/peps/pep-0257/>`_ will be enforced. The
+value can be ``true`` or ``false``.
 
 
 ``test-warnings <bool>``
@@ -143,8 +144,8 @@ The currently supported frameworks are ``celery``, ``django`` and ``flask``.
 ----------------------
 
 The default behaviour is to autodetect dependencies in order to augment the code analysis. This
-setting can be used to turn off autodetection completely. The default value is ``true``, unless ``requirements`` has been defined.
-The value can be 'true' or 'false'.
+setting can be used to turn off autodetection completely. The default value is ``true``, unless
+``requirements`` has been defined. The value can be 'true' or 'false'.
 
 
 ``ignore-paths`` and ``ignore-patterns <list>``
