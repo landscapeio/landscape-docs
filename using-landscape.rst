@@ -57,7 +57,7 @@ If Using Flask
 --------------
 
 Similarly, Landscape has Flask-specific behaviours thanks to the awesome
-`pylint-flask plugin<https://github.com/jschaf/pylint-flask>`_.
+`pylint-flask plugin <https://github.com/jschaf/pylint-flask>`_.
 
 
 What Next?
