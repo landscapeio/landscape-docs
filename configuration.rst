@@ -19,15 +19,15 @@ An Example File
 Here is a simple example of what a configuration file might look like::
 
 
-    doc-warnings: yes
-    test-warnings: no
+    doc-warnings: true
+    test-warnings: false
     strictness: veryhigh
     max-line-length: 120
     uses:
         - django
         - celery
         - flask
-    autodetect: yes
+    autodetect: true
     requirements:
         - deps/core.txt
         - deps/test.txt
