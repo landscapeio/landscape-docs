@@ -54,7 +54,7 @@ does the code analysis, can be configured to be more or less strict. The default
 used by Landscape is 'medium' but you can adjust this up or down if you want harsher
 or more relaxed checking.
 
-``python targets <2, 3>``
+``python-targets <2, 3>``
 -------------------------
 This is a list of which major python versions your project supports.
 
